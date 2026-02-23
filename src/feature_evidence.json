@@ -1,0 +1,128 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-login-page-with-centered-card-layout-containing-email-field-password-field-and-login-button-style-with-deep-blue-primary-color-and-gray-secondary-color-using-tailwind-css",
+      "featureTitle": "Create a Login page with centered card layout containing email field, password field, and login button. Style with deep blue primary color and gray secondary color using Tailwind CSS.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/Login.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-dashboard-page-with-sidebar-navigation-dashboard-upload-progress-projects-logout-top-navbar-displaying-ai-assisted-construction-progress-monitoring-system-and-three-statistics-cards-showing-total-projects-active-projects-and-last-updated-project-use-card-based-layout-with-deep-blue-and-gray-color-scheme",
+      "featureTitle": "Create a Dashboard page with sidebar navigation (Dashboard, Upload Progress, Projects, Logout), top navbar displaying 'AI-Assisted Construction Progress Monitoring System', and three statistics cards showing Total Projects, Active Projects, and Last Updated Project. Use card-based layout with deep blue and gray color scheme.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Navbar.tsx",
+        "frontend/src/components/Sidebar.tsx",
+        "frontend/src/components/StatCard.tsx",
+        "frontend/src/pages/Dashboard.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-projects-table-to-the-dashboard-page-displaying-project-name-stage-progress-last-updated-date-and-a-view-details-button-for-each-row-use-mock-data-for-the-table-entries",
+      "featureTitle": "Add a projects table to the Dashboard page displaying Project Name, Stage, Progress %, Last Updated Date, and a View Details button for each row. Use mock data for the table entries.",
+      "files": [
+        "frontend/src/components/ProjectsTable.tsx",
+        "frontend/src/pages/Dashboard.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-an-upload-progress-page-with-a-form-card-containing-project-dropdown-selector-number-of-buildings-input-field-construction-stage-dropdown-foundation-superstructure-facade-interiors-furnishing-and-a-drag-and-drop-style-image-upload-box-include-submit-button-error-alert-ui-component-and-success-notification-component",
+      "featureTitle": "Create an Upload Progress page with a form card containing: Project dropdown selector, Number of Buildings input field, Construction Stage dropdown (Foundation, Superstructure, Facade, Interiors, Furnishing), and a drag-and-drop style image upload box. Include Submit button, error alert UI component, and success notification component.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/ImageUpload.tsx",
+        "frontend/src/pages/UploadProgress.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-project-details-page-displaying-project-name-header-current-stage-badge-large-progress-percentage-display-progress-bar-timeline-graph-placeholder-recharts-compatible-structure-image-history-gallery-and-a-comparison-section-showing-previous-stage-current-stage-and-progress-increase-percentage-use-mock-data-throughout",
+      "featureTitle": "Create a Project Details page displaying: project name header, current stage badge, large progress percentage display, progress bar, timeline graph placeholder (Recharts compatible structure), image history gallery, and a comparison section showing Previous Stage, Current Stage, and Progress Increase percentage. Use mock data throughout.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/ComparisonSection.tsx",
+        "frontend/src/components/ImageGallery.tsx",
+        "frontend/src/components/ProgressBar.tsx",
+        "frontend/src/components/StageBadge.tsx",
+        "frontend/src/components/TimelineChart.tsx",
+        "frontend/src/pages/ProjectDetails.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-organize-all-react-components-in-a-structured-folder-hierarchy-with-clean-readable-code-use-functional-components-throughout-and-ensure-responsive-design-across-all-pages-using-tailwind-css-mobile-first-approach",
+      "featureTitle": "Organize all React components in a structured folder hierarchy with clean, readable code. Use functional components throughout and ensure responsive design across all pages using Tailwind CSS mobile-first approach.",
+      "files": [
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

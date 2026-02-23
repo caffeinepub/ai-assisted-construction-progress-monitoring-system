@@ -1,0 +1,221 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Professional Dashboard UI for Construction Monitoring System",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Create Login page with centered card layout, email and password fields, and login button styled with deep blue and gray Tailwind theme",
+      "acceptanceCriteria": [
+        "Login form is centered on the page in a card layout",
+        "Email and password input fields are present",
+        "Login button uses deep blue primary color",
+        "Layout is responsive and professional"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Login.tsx",
+          "operation": "create",
+          "description": "Create Login page component with centered card layout containing email input, password input, and login button. Use Tailwind CSS with deep blue primary color (#1e3a8a) and gray secondary colors. Implement responsive design with mobile-first approach."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add route for /login path pointing to Login page component. Import and register the Login component in the router configuration."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Create Dashboard page with sidebar navigation, top navbar, and three statistics cards showing Total Projects, Active Projects, and Last Updated Project",
+      "acceptanceCriteria": [
+        "Sidebar contains Dashboard, Upload Progress, Projects, and Logout navigation items",
+        "Top navbar displays the project name",
+        "Three statistics cards are visible with mock data",
+        "Layout uses professional government/enterprise styling",
+        "Design is responsive across screen sizes"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Sidebar.tsx",
+          "operation": "create",
+          "description": "Create responsive Sidebar component with navigation links for Dashboard, Upload Progress, Projects, and Logout. Use deep blue background with white text. Implement mobile collapse functionality with hamburger menu for small screens."
+        },
+        {
+          "path": "frontend/src/components/Navbar.tsx",
+          "operation": "create",
+          "description": "Create top Navbar component displaying 'AI-Assisted Construction Progress Monitoring System' as the title. Use deep blue background with white text and professional styling."
+        },
+        {
+          "path": "frontend/src/components/StatCard.tsx",
+          "operation": "create",
+          "description": "Create reusable StatCard component accepting title, value, and optional icon props. Use card styling with shadow, rounded corners, and padding. Display value prominently with title as subtitle."
+        },
+        {
+          "path": "frontend/src/pages/Dashboard.tsx",
+          "operation": "create",
+          "description": "Create Dashboard page component integrating Sidebar, Navbar, and three StatCard components showing mock data for Total Projects (12), Active Projects (8), and Last Updated Project (Project Alpha - 2 hours ago). Use the generated hero image frontend/public/assets/generated/construction-site-hero.dim_1200x600.png as a background or hero section element. Implement responsive grid layout for stat cards."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add route for /dashboard path pointing to Dashboard page component. Import and register the Dashboard component in the router configuration. Set /dashboard as the default authenticated landing page."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Add projects table to Dashboard page displaying Project Name, Stage, Progress %, Last Updated Date, and View Details button with mock data",
+      "acceptanceCriteria": [
+        "Table displays all specified columns",
+        "Mock data populates multiple project rows",
+        "View Details button is present for each project",
+        "Table styling matches the professional theme",
+        "Table is responsive on smaller screens"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ProjectsTable.tsx",
+          "operation": "create",
+          "description": "Create ProjectsTable component displaying columns for Project Name, Stage, Progress %, Last Updated Date, and View Details button. Use mock data array with at least 5-7 project entries covering different stages (Foundation, Superstructure, Facade, Interiors, Furnishing) and progress percentages. Implement responsive table design that stacks or scrolls horizontally on mobile. Style View Details buttons with deep blue primary color."
+        },
+        {
+          "path": "frontend/src/pages/Dashboard.tsx",
+          "operation": "modify",
+          "description": "Import and integrate ProjectsTable component below the statistics cards section. Wrap in a Card component for consistent styling and spacing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Create Upload Progress page with form containing Project dropdown, Number of Buildings input, Construction Stage dropdown, drag-and-drop image upload, Submit button, and alert/notification components",
+      "acceptanceCriteria": [
+        "Form is contained in a clean card layout",
+        "Project dropdown includes mock project options",
+        "Construction Stage dropdown contains all five specified stages",
+        "Image upload area supports drag-and-drop UI interaction",
+        "Submit button is styled consistently",
+        "Alert and notification components can display success/error states"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Alert.tsx",
+          "operation": "create",
+          "description": "Create reusable Alert component supporting error and success variants. Accept message text and type props. Use red styling for error alerts and green for success. Include icon and dismiss button. Use Tailwind CSS for all styling."
+        },
+        {
+          "path": "frontend/src/components/ImageUpload.tsx",
+          "operation": "create",
+          "description": "Create ImageUpload component with drag-and-drop UI. Display dashed border box with upload icon and 'Drag and drop images here or click to browse' text. Handle file selection and display selected file names. Style with gray border and deep blue highlight on hover/drag-over states."
+        },
+        {
+          "path": "frontend/src/pages/UploadProgress.tsx",
+          "operation": "create",
+          "description": "Create UploadProgress page component with form containing: Project dropdown (mock options: Project Alpha, Project Beta, Project Gamma), Number of Buildings number input, Construction Stage dropdown (Foundation, Superstructure, Facade, Interiors, Furnishing), ImageUpload component, and Submit button. Wrap form in Card component. Include Alert component that displays success message on form submission (mock only, no actual upload). Use Sidebar and Navbar for consistent layout."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add route for /upload path pointing to UploadProgress page component. Import and register the UploadProgress component in the router configuration."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Create Project Details page displaying project name, stage badge, progress percentage, progress bar, timeline graph placeholder, image gallery, and comparison section with mock data",
+      "acceptanceCriteria": [
+        "Project name is prominently displayed at the top",
+        "Stage badge uses appropriate styling with color coding",
+        "Progress percentage is shown in large, readable text",
+        "Progress bar visually represents completion",
+        "Timeline graph area has placeholder structure for Recharts integration",
+        "Image gallery displays multiple mock construction images",
+        "Comparison section clearly shows previous vs current stage with percentage increase"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/StageBadge.tsx",
+          "operation": "create",
+          "description": "Create StageBadge component accepting stage name prop. Apply color-coded styling: Foundation (gray), Superstructure (blue), Facade (indigo), Interiors (purple), Furnishing (green). Use rounded pill shape with small padding."
+        },
+        {
+          "path": "frontend/src/components/ProgressBar.tsx",
+          "operation": "create",
+          "description": "Create ProgressBar component accepting percentage prop. Display horizontal bar with gray background and deep blue filled portion representing completion percentage. Include percentage text overlay."
+        },
+        {
+          "path": "frontend/src/components/ImageGallery.tsx",
+          "operation": "create",
+          "description": "Create ImageGallery component accepting array of image paths. Display images in responsive grid (3 columns on desktop, 2 on tablet, 1 on mobile) with rounded corners and shadow on hover. Use the generated gallery images: frontend/public/assets/generated/building-progress-1.dim_400x300.png, frontend/public/assets/generated/building-progress-2.dim_400x300.png, and frontend/public/assets/generated/building-progress-3.dim_400x300.png as mock data."
+        },
+        {
+          "path": "frontend/src/components/ComparisonSection.tsx",
+          "operation": "create",
+          "description": "Create ComparisonSection component displaying Previous Stage, Current Stage, and Progress Increase percentage in a three-column layout. Use the generated comparison images frontend/public/assets/generated/foundation-stage.dim_400x300.png for previous stage and frontend/public/assets/generated/superstructure-stage.dim_400x300.png for current stage. Show stage names, images side by side, and prominent progress increase percentage with upward arrow indicator. Use Card styling for each column."
+        },
+        {
+          "path": "frontend/src/components/TimelineChart.tsx",
+          "operation": "create",
+          "description": "Create TimelineChart component with placeholder structure compatible with Recharts library. Define mock data points with dates and progress values. Create container div with appropriate dimensions and title 'Progress Timeline'. Add comment indicating Recharts LineChart integration point."
+        },
+        {
+          "path": "frontend/src/pages/ProjectDetails.tsx",
+          "operation": "create",
+          "description": "Create ProjectDetails page component displaying: project name header (Project Alpha), StageBadge showing current stage (Superstructure), large progress percentage display (68% in 3xl font), ProgressBar component, TimelineChart component, ImageGallery component, and ComparisonSection component. Use Sidebar and Navbar for consistent layout. Organize sections with Card components and proper spacing. Accept project ID from route params but use mock data for all displays."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add route for /project/:id path pointing to ProjectDetails page component. Import and register the ProjectDetails component in the router configuration."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Create reusable Card, Button, Alert, and Sidebar components using Tailwind CSS with deep blue primary, gray secondary, rounded corners, and soft shadows",
+      "acceptanceCriteria": [
+        "Card component accepts children and has consistent padding and shadow",
+        "Button component supports primary and secondary color variants",
+        "Alert component can display error and success states",
+        "Sidebar is responsive and collapses appropriately on mobile",
+        "All components use the specified color scheme",
+        "Components follow clean, readable code structure"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Card.tsx",
+          "operation": "create",
+          "description": "Create reusable Card component accepting children and optional className props. Apply white background, rounded-lg corners, shadow-md, and p-6 padding. Allow className prop to extend styling while maintaining base styles."
+        },
+        {
+          "path": "frontend/src/components/Button.tsx",
+          "operation": "create",
+          "description": "Create reusable Button component accepting children, onClick, variant (primary/secondary), and optional className props. Primary variant uses deep blue (#1e3a8a) background with white text. Secondary variant uses gray background. Include hover states, rounded corners, and consistent padding (px-6 py-2). Support disabled state with reduced opacity."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Organize React components in structured folder hierarchy with clean functional components and responsive Tailwind CSS mobile-first design",
+      "acceptanceCriteria": [
+        "Components are organized in logical folder structure",
+        "All components are functional (not class-based)",
+        "Code follows consistent formatting and naming conventions",
+        "All pages are responsive and work on mobile, tablet, and desktop",
+        "Tailwind CSS classes are used throughout without custom CSS"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Define CSS custom properties for deep blue primary color (#1e3a8a) and gray secondary colors in the :root selector. Ensure Tailwind base, components, and utilities directives are present. Add any global body styles for consistent typography and background."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Extend Tailwind theme to include custom primary color (deep blue #1e3a8a) and secondary gray colors. Configure content paths to scan all tsx/ts files. Ensure mobile-first responsive breakpoints are properly configured."
+        }
+      ]
+    }
+  ]
+}

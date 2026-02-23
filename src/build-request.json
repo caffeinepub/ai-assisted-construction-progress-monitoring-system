@@ -1,0 +1,184 @@
+{
+  "kind": "build_request",
+  "title": "Build professional dashboard UI for construction monitoring system",
+  "projectName": "Construction Progress Monitor",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a Login page with centered card layout containing email field, password field, and login button. Style with deep blue primary color and gray secondary color using Tailwind CSS.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Login Page - Email field - Password field - Login button - Simple modern centered card layout"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Login form is centered on the page in a card layout",
+        "Email and password input fields are present",
+        "Login button uses deep blue primary color",
+        "Layout is responsive and professional"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Create a Dashboard page with sidebar navigation (Dashboard, Upload Progress, Projects, Logout), top navbar displaying 'AI-Assisted Construction Progress Monitoring System', and three statistics cards showing Total Projects, Active Projects, and Last Updated Project. Use card-based layout with deep blue and gray color scheme.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Sidebar navigation (Dashboard, Upload Progress, Projects, Logout)",
+          "Cards showing: - Total Projects - Active Projects - Last Updated Project"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Sidebar contains Dashboard, Upload Progress, Projects, and Logout navigation items",
+        "Top navbar displays the project name",
+        "Three statistics cards are visible with mock data",
+        "Layout uses professional government/enterprise styling",
+        "Design is responsive across screen sizes"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Add a projects table to the Dashboard page displaying Project Name, Stage, Progress %, Last Updated Date, and a View Details button for each row. Use mock data for the table entries.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Table listing projects: - Project Name - Stage - Progress % - Last Updated Date - View Details button"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Table displays all specified columns",
+        "Mock data populates multiple project rows",
+        "View Details button is present for each project",
+        "Table styling matches the professional theme",
+        "Table is responsive on smaller screens"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Create an Upload Progress page with a form card containing: Project dropdown selector, Number of Buildings input field, Construction Stage dropdown (Foundation, Superstructure, Facade, Interiors, Furnishing), and a drag-and-drop style image upload box. Include Submit button, error alert UI component, and success notification component.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Fields: - Project dropdown - Number of Buildings input - Construction Stage dropdown (Foundation, Superstructure, Facade, Interiors, Furnishing) - Image upload box (drag & drop style)",
+          "Submit button - Error alert UI component - Success notification component"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Form is contained in a clean card layout",
+        "Project dropdown includes mock project options",
+        "Construction Stage dropdown contains all five specified stages",
+        "Image upload area supports drag-and-drop UI interaction",
+        "Submit button is styled consistently",
+        "Alert and notification components can display success/error states"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Create a Project Details page displaying: project name header, current stage badge, large progress percentage display, progress bar, timeline graph placeholder (Recharts compatible structure), image history gallery, and a comparison section showing Previous Stage, Current Stage, and Progress Increase percentage. Use mock data throughout.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Project name at top - Current stage badge - Progress percentage large display - Progress bar - Timeline graph placeholder (Recharts compatible) - Image history gallery - Comparison section: - Previous Stage - Current Stage - Progress Increase %"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Project name is prominently displayed at the top",
+        "Stage badge uses appropriate styling with color coding",
+        "Progress percentage is shown in large, readable text",
+        "Progress bar visually represents completion",
+        "Timeline graph area has placeholder structure for Recharts integration",
+        "Image gallery displays multiple mock construction images",
+        "Comparison section clearly shows previous vs current stage with percentage increase"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Create reusable components: Card component for content containers, Button component with primary/secondary variants, Alert component for error/success messages, and responsive Sidebar component. All components should use Tailwind CSS with deep blue primary color, gray secondary color, modern rounded corners, and soft shadows.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Reusable Card component - Reusable Button component - Reusable Alert component - Responsive sidebar",
+          "Modern rounded corners - Soft shadows"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Card component accepts children and has consistent padding and shadow",
+        "Button component supports primary and secondary color variants",
+        "Alert component can display error and success states",
+        "Sidebar is responsive and collapses appropriately on mobile",
+        "All components use the specified color scheme",
+        "Components follow clean, readable code structure"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Organize all React components in a structured folder hierarchy with clean, readable code. Use functional components throughout and ensure responsive design across all pages using Tailwind CSS mobile-first approach.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Generate React functional components",
+          "Organize in structured component folders",
+          "Ensure code is clean and readable",
+          "Responsive design"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Components are organized in logical folder structure",
+        "All components are functional (not class-based)",
+        "Code follows consistent formatting and naming conventions",
+        "All pages are responsive and work on mobile, tablet, and desktop",
+        "Tailwind CSS classes are used throughout without custom CSS"
+      ]
+    }
+  ],
+  "constraints": [
+    "Use only deep blue as primary color and gray as secondary color",
+    "No backend logic or integration required",
+    "Use mock data for all tables, charts, and statistics",
+    "Must use Tailwind CSS exclusively for styling",
+    "Light theme only",
+    "All components must be React functional components"
+  ],
+  "nonGoals": [
+    "Backend API integration",
+    "Real data fetching or persistence",
+    "User authentication logic",
+    "Image processing or AI analysis features",
+    "Dark theme or theme switching",
+    "Actual file upload functionality"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Professional government building construction site photo for dashboard hero section (construction-site-hero.dim_1200x600.png)",
+      "Construction foundation stage reference image for comparison section (foundation-stage.dim_400x300.png)",
+      "Construction superstructure stage reference image for comparison section (superstructure-stage.dim_400x300.png)",
+      "Modern office building under construction for project gallery (building-progress-1.dim_400x300.png)",
+      "High-rise construction progress photo for project gallery (building-progress-2.dim_400x300.png)",
+      "Infrastructure construction site aerial view for project gallery (building-progress-3.dim_400x300.png)"
+    ],
+    "edits": []
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "AI-Assisted Construction Progress Monitoring System - A professional dashboard UI for a Final Year Engineering Project that allows government agencies to monitor building construction progress through uploaded site images. Features include login, main dashboard with project statistics, upload progress form with drag-and-drop, and detailed project view with progress tracking and image comparison. Built with React and Tailwind CSS in a clean government/enterprise style using deep blue and gray colors.",
+  "architectural_notes": [
+    "React functional components with Tailwind CSS for styling",
+    "Component-based architecture with reusable UI elements (Card, Button, Alert, Sidebar)",
+    "No backend integration - UI only with mock data for tables and charts",
+    "Responsive design with mobile-first approach",
+    "Government/enterprise style: deep blue primary, gray secondary, light theme",
+    "Construction stages: Foundation, Superstructure, Facade, Interiors, Furnishing",
+    "Recharts compatible timeline graph placeholder",
+    "Drag-and-drop image upload functionality in Upload Progress form"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Professional government building construction site photo for dashboard hero section (construction-site-hero.dim_1200x600.png)\n- Construction foundation stage reference image for comparison section (foundation-stage.dim_400x300.png)\n- Construction superstructure stage reference image for comparison section (superstructure-stage.dim_400x300.png)\n- Modern office building under construction for project gallery (building-progress-1.dim_400x300.png)\n- High-rise construction progress photo for project gallery (building-progress-2.dim_400x300.png)\n- Infrastructure construction site aerial view for project gallery (building-progress-3.dim_400x300.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-login-page-with-centered-card-layout-containing-email-field-password-field-and-login-button-style-with-deep-blue-primary-color-and-gray-secondary-color-using-tailwind-css",
+      "title": "Create a Login page with centered card layout containing email field, password field, and login button. Style with deep blue primary color and gray secondary color using Tailwind CSS.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-dashboard-page-with-sidebar-navigation-dashboard-upload-progress-projects-logout-top-navbar-displaying-ai-assisted-construction-progress-monitoring-system-and-three-statistics-cards-showing-total-projects-active-projects-and-last-updated-project-use-card-based-layout-with-deep-blue-and-gray-color-scheme",
+      "title": "Create a Dashboard page with sidebar navigation (Dashboard, Upload Progress, Projects, Logout), top navbar displaying 'AI-Assisted Construction Progress Monitoring System', and three statistics cards showing Total Projects, Active Projects, and Last Updated Project. Use card-based layout with deep blue and gray color scheme.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-projects-table-to-the-dashboard-page-displaying-project-name-stage-progress-last-updated-date-and-a-view-details-button-for-each-row-use-mock-data-for-the-table-entries",
+      "title": "Add a projects table to the Dashboard page displaying Project Name, Stage, Progress %, Last Updated Date, and a View Details button for each row. Use mock data for the table entries.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-upload-progress-page-with-a-form-card-containing-project-dropdown-selector-number-of-buildings-input-field-construction-stage-dropdown-foundation-superstructure-facade-interiors-furnishing-and-a-drag-and-drop-style-image-upload-box-include-submit-button-error-alert-ui-component-and-success-notification-component",
+      "title": "Create an Upload Progress page with a form card containing: Project dropdown selector, Number of Buildings input field, Construction Stage dropdown (Foundation, Superstructure, Facade, Interiors, Furnishing), and a drag-and-drop style image upload box. Include Submit button, error alert UI component, and success notification component.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-project-details-page-displaying-project-name-header-current-stage-badge-large-progress-percentage-display-progress-bar-timeline-graph-placeholder-recharts-compatible-structure-image-history-gallery-and-a-comparison-section-showing-previous-stage-current-stage-and-progress-increase-percentage-use-mock-data-throughout",
+      "title": "Create a Project Details page displaying: project name header, current stage badge, large progress percentage display, progress bar, timeline graph placeholder (Recharts compatible structure), image history gallery, and a comparison section showing Previous Stage, Current Stage, and Progress Increase percentage. Use mock data throughout.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-organize-all-react-components-in-a-structured-folder-hierarchy-with-clean-readable-code-use-functional-components-throughout-and-ensure-responsive-design-across-all-pages-using-tailwind-css-mobile-first-approach",
+      "title": "Organize all React components in a structured folder hierarchy with clean, readable code. Use functional components throughout and ensure responsive design across all pages using Tailwind CSS mobile-first approach.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Login page with email/password fields and centered card layout",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Dashboard page with sidebar navigation, top navbar, project statistics cards (Total/Active/Last Updated), and projects table with view details",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Upload Progress page with form for project selection, building count, construction stage dropdown, and drag-and-drop image upload",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Project Details page with stage badge, progress display, timeline graph placeholder, image history gallery, and stage comparison section",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Reusable components: Card, Button, Alert, responsive Sidebar with Tailwind CSS styling",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Create reusable components: Card component for content containers, Button component with primary/secondary variants, Alert component for error/success messages, and responsive Sidebar component. All components should use Tailwind CSS with deep blue primary color, gray secondary color, modern rounded corners, and soft shadows.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "AI-Assisted Construction Progress Monitoring System",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

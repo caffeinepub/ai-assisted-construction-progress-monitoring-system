@@ -1,0 +1,20 @@
+{
+  "frontend/src/App.tsx": "Main application component with TanStack Router configuration defining routes for login, dashboard, upload progress, and project details pages.",
+  "frontend/src/pages/Login.tsx": "Login page with centered card layout containing email and password fields, styled with deep blue primary color and professional government/enterprise design.",
+  "frontend/src/pages/Dashboard.tsx": "Main dashboard page displaying hero section with construction site image, three statistics cards (Total Projects, Active Projects, Last Updated), and projects table with mock data.",
+  "frontend/src/pages/UploadProgress.tsx": "Upload progress form page with project dropdown, building count input, construction stage selector, drag-and-drop image upload, and success/error alert notifications.",
+  "frontend/src/pages/ProjectDetails.tsx": "Detailed project view page showing project header, progress percentage, progress bar, timeline chart, stage comparison section, and image gallery with mock data.",
+  "frontend/src/components/DashboardLayout.tsx": "Reusable layout component wrapping pages with sidebar navigation, top navbar, main content area, and footer with attribution.",
+  "frontend/src/components/Sidebar.tsx": "Responsive sidebar navigation component with menu items (Dashboard, Upload Progress, Projects, Logout), mobile overlay, and deep blue gradient background.",
+  "frontend/src/components/Navbar.tsx": "Top navigation bar displaying the application title and system status indicator with mobile menu toggle button.",
+  "frontend/src/components/StatCard.tsx": "Reusable statistics card component displaying title, value, icon, and optional description with hover effects.",
+  "frontend/src/components/ProjectsTable.tsx": "Projects table component displaying project name, stage badge, progress bar, last updated time, and view details button with mock data for 7 projects.",
+  "frontend/src/components/StageBadge.tsx": "Color-coded badge component for construction stages (Foundation, Superstructure, Facade, Interiors, Furnishing) with distinct styling for each stage.",
+  "frontend/src/components/ProgressBar.tsx": "Horizontal progress bar component with gradient fill and percentage display, showing completion status visually.",
+  "frontend/src/components/ImageUpload.tsx": "Drag-and-drop image upload component with file selection, preview of selected files, and remove functionality.",
+  "frontend/src/components/TimelineChart.tsx": "Progress timeline chart component using Recharts LineChart to display project progress over time with mock monthly data.",
+  "frontend/src/components/ImageGallery.tsx": "Responsive image gallery component displaying construction progress images in a grid layout with hover effects using generated assets.",
+  "frontend/src/components/ComparisonSection.tsx": "Stage comparison component showing previous stage (Foundation), current stage (Superstructure), and progress increase percentage with side-by-side images.",
+  "frontend/src/index.css": "Global styles with OKLCH color system defining deep blue primary color (#1e3a8a) and gray secondary colors for government/enterprise theme.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration with extended theme colors, custom design tokens, and plugins for the professional dashboard UI."
+}
